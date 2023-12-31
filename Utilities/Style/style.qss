@@ -1,0 +1,57 @@
+/* style.qss */
+
+/* Global styling for the entire application */
+* {
+    color: #ffffff;  /* White text color for better readability */
+    font-family: "Titillium Web", Arial, sans-serif;  /* Change the font to a trendy one (you can replace "Segoe UI" with another font you prefer) */
+}
+
+QWidget {
+    background-color: #000000;  /* Black background */
+}
+
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:1 #dddddd);  /* White to light gray gradient */
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: #aaaaaa;  /* Light gray border color */
+    color: black;  /* Black text color */
+    padding: 8px;  /* Increased padding for better appearance */
+    box-shadow: 0 0 5px #aaaaaa, 0 0 5px #aaaaaa inset;  /* Light gray box shadow */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;  /* Added transition for smoother hover effect */
+    font-size: 14px;  /* Adjust the font size as needed */
+}
+
+QPushButton:hover {
+    background-color: #444444;  /* Slightly lighter grey on hover */
+    box-shadow:
+        rgba(255, 255, 255, 1) -1px -1px,
+        -2px -2px,
+        rgba(255, 255, 255, 1) -3px -3px,
+        rgba(255, 255, 255, .9) -4px -4px,
+        rgba(255, 255, 255, .8) -5px -5px,
+        rgba(255, 255, 255, .7) -6px -6px,
+        rgba(255, 255, 255, .6) -7px -7px,
+        rgba(255, 255, 255, .5) -8px -8px,
+        rgba(255, 255, 255, .4) -9px -9px,
+        rgba(255, 255, 255, .3) -10px -10px,
+        rgba(255, 255, 255, .2) -11px -11px,
+        rgba(255, 255, 255, .1) -12px -12px;
+    transform: scale(1.05);  /* Scale up on hover for a cool effect */
+}
+
+QPushButton:active {
+    top: 2px;
+    transform: scale(0.98);  /* Scale down on click for a pressed effect */
+}
+
+QPushButton:disabled {
+    background-color: #999999;  /* Light grey for disabled state */
+    border-color: #cccccc;  /* Slightly darker border for disabled state */
+    color: #666666;  /* Darker text color for disabled state */
+    box-shadow: none;  /* No box shadow for disabled state */
+    cursor: not-allowed;  /* Change cursor for disabled state */
+}
