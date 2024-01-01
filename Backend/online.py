@@ -30,7 +30,7 @@ class OnlineWindow(QWidget):
     def __init__(self):
         super().__init__()
         # Load the style sheet
-        style_file = QFile("Utilities/Style/style.qss")
+        style_file = QFile("assets/Style/style.qss")
         if style_file.open(QFile.ReadOnly | QFile.Text):
             stream = QTextStream(style_file)
             self.setStyleSheet(stream.readAll())
@@ -44,7 +44,7 @@ class OnlineWindow(QWidget):
 
         self.setWindowTitle("Online Mode")
         self.setFixedSize(800, 500)
-        icon_path = "Utilities/Icons/favicon-black.png"
+        icon_path = "assets/Icons/favicon-black.png"
         self.setWindowIcon(QIcon(icon_path))
 
         layout = QVBoxLayout()
@@ -83,7 +83,7 @@ class OnlineWindow(QWidget):
         # Logo and Status layout
         logo_status_layout = QHBoxLayout()
         logo_label = QLabel()
-        logo_pixmap = QPixmap("Utilities/Icons/favicon-white.png")
+        logo_pixmap = QPixmap("assets/Icons/favicon-white.png")
         logo_label.setPixmap(logo_pixmap)
         logo_label.setAlignment(Qt.AlignCenter)
         logo_status_layout.addWidget(logo_label, alignment=Qt.AlignCenter)
@@ -136,7 +136,7 @@ class OnlineWindow(QWidget):
         right_column_layout.addSpacerItem(QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding))
 
         # QLabel for displaying the GIF
-        self.movie = QMovie("Utilities/Icons/loading.gif")
+        self.movie = QMovie("assets/Icons/loading.gif")
         self.gif_label = QLabel(self)
         self.gif_label.setMovie(self.movie)
         self.movie.start()

@@ -30,7 +30,7 @@ class OfflineWindow(QWidget):
     def __init__(self):
         super().__init__()
         # Load the style sheet
-        style_file = QFile("Utilities/Style/style.qss")
+        style_file = QFile("assets/Style/style.qss")
         if style_file.open(QFile.ReadOnly | QFile.Text):
             stream = QTextStream(style_file)
             self.setStyleSheet(stream.readAll())
@@ -39,7 +39,7 @@ class OfflineWindow(QWidget):
 
         self.setWindowTitle("Offline Mode")
         self.setFixedSize(800, 500)
-        icon_path = "Utilities/Icons/favicon-black.png"
+        icon_path = "assets/Icons/favicon-black.png"
         self.setWindowIcon(QIcon(icon_path))
 
         screen_geometry = QApplication.primaryScreen().geometry()

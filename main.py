@@ -11,13 +11,13 @@ class WelcomeWindow(QWidget):
         super().__init__()
 
         # Load the style sheet
-        style_file = QFile("Utilities/Style/style.qss")
+        style_file = QFile("assets/Style/style.qss")
         style_file.open(QFile.ReadOnly | QFile.Text)
         stream = QTextStream(style_file)
         self.setStyleSheet(stream.readAll())
 
         # Load the font file
-        font_id = QFontDatabase.addApplicationFont("Utilities/Font/TitilliumWeb-Bold.ttf")
+        font_id = QFontDatabase.addApplicationFont("assets/Font/TitilliumWeb-Bold.ttf")
 
         if font_id != -1:
             # If the font is loaded successfully, set it as the default application font
@@ -30,7 +30,7 @@ class WelcomeWindow(QWidget):
         self.setFixedSize(500, 200)
 
         # Set Window Icon
-        icon_path = "Utilities/Icons/favicon-black.png"  # Replace with the actual path to your icon file
+        icon_path = "assets/Icons/favicon-black.png"  # Replace with the actual path to your icon file
         self.setWindowIcon(QIcon(icon_path))
 
         # Center the window on the screen
@@ -43,7 +43,7 @@ class WelcomeWindow(QWidget):
 
         # Logo QLabel
         logo_label = QLabel(alignment=Qt.AlignCenter)  # Center the logo within the QLabel
-        pixmap = QPixmap("Utilities/Icons/logo.png")
+        pixmap = QPixmap("assets/Icons/logo.png")
         logo_label.setPixmap(pixmap)
         layout.addWidget(logo_label)
 
