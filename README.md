@@ -5,7 +5,7 @@
 *A Multimodal Facial Biometric System for Recognition, Gender Classification, Emotion Recognition and Face-Shape Prediciton*
 <div align='center'>
 
-![Alt Text](./assets\Icons\logo.png)
+![Alt Text](assets/Icons/logo.png)
 
 </div>
 
@@ -79,10 +79,10 @@ IV. Emotion Recognition Model trained on <a href="https://www.kaggle.com/dataset
 
 |`Model`|`Train Accuracy`|`Test Accuracy`|`Confusion Matrix`|
 |-------|----|-----|------|
-|*Face Recognition*|99.7%|99.2%|![recognizer](./snapshots/matrix_recognition.png) |
-|*Gender Classification*|96.48%|95.15%|![gender](./snapshots/matrix_gender.png) |
-|*Face-Shape Prediction*|99.79%|88.03%|![shape](./snapshots/matrix_faceshape.png) |
-|*Emotion Recognition*|81.26%|66.13%|![emotion](./snapshots/matrix_emotion.png) |
+|*Face Recognition*|99.7%|99.2%|![recognizer](Snapshots/matrix_recognition.png) |
+|*Gender Classification*|96.48%|95.15%|![gender](Snapshots/matrix_gender.png) |
+|*Face-Shape Prediction*|99.79%|88.03%|![shape](Snapshots/matrix_faceshape.png) |
+|*Emotion Recognition*|81.26%|66.13%|![emotion](Snapshots/matrix_emotion.png) |
 
 </div>
 
@@ -108,10 +108,10 @@ III. An online window
 
 |`window`|`screenshot`|
 |---|---|
-|*welcome window*|![welcome](./snapshots/welcome.png)|
-|*offline window*|![welcome](./snapshots/offline1.png)|
-|*offline window*|![welcome](./snapshots/offline2.png)|
-|*online window*|![welcome](./snapshots/online.png)|
+|*welcome window*|![welcome](Snapshots/welcome.png)|
+|*offline window*|![welcome](Snapshots/offline1.png)|
+|*offline window*|![welcome](Snapshots/offline2.png)|
+|*online window*|![welcome](Snapshots/online.png)|
 
 
 </div>
