@@ -65,7 +65,7 @@ tensorflow==2.15.0.post1
 
 ## The final used models in the GUI were as follows: 
 
-I. Face Recogniton Model trained on a subset of <a href="https://www.nist.gov/itl/products-and-services/color-feret-database">the FERET database</a>  
+I. Face Recogniton Model trained on a subset of <a href="https://www.nist.gov/itl/products-and-services/color-feret-database">the color FERET database</a>  
 
 II. Gender Classification Model trained on a <a href="https://www.kaggle.com/datasets/cashutosh/gen
 der-classification-dataset/data"> Public Gender dataset </a>
