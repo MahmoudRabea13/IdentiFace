@@ -1,3 +1,4 @@
+This repository contains the implementation of our research paper, check the paper on [Arxiv](https://arxiv.org/abs/2401.01227)
 <div id = 'top'></div>
 
 # IdentiFace 
